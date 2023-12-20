@@ -1,0 +1,9 @@
+POST /teams/spl_auction/_bulk
+{ "index" : { "id" : "Matadorz" } }
+{ "name" : "Matadorz", "teamLogo" : "matadors.png" }
+{ "index" : { "id" : "Snipers" } }
+{ "name" : "Snipers", "teamLogo" : "snipers.png" }
+{ "index" : { "id" : "Torpedoes" } }
+{ "name" : "Torpedoes", "teamLogo" : "torpedoes.png" }
+{ "index" : { "id" : "Zionz" } }
+{ "name" : "Zionz", "teamLogo" : "zionz.png" }

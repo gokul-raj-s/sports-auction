@@ -1,0 +1,86 @@
+curl --request GET \
+  --url http://localhost:9200/common_index/spl_auction/common_information \
+  --header 'content-type: application/json' \
+  --data '{
+	"expectedTeamSize": 20,
+	"expectedNoOfWomenPlayers": 3,
+	"negativePoints": 10,
+	"bonusPoints": 10,
+	"basePointsPerTeam": 1500,
+	"basePointsPerPlayer": 25
+}
+'
+
+curl --request GET \
+  --url http://localhost:8080/player_assignments/Snipers
+  
+[
+    {
+        "id": "",
+        "playerAlias": "",
+        "fullName": "",
+        "profilePicture": "",
+        "teamName": "",
+        "role": "",
+        "acquiredPoints": 
+    }
+]
+  
+curl --request GET \
+  --url http://localhost:8080/teams
+  
+[
+    {
+        "name": "Snipers",
+        "teamLogo": "snipers.png",
+        "balancePoints": 1500,
+        "numberOfPlayers": 2,
+        "numberOfWomenPlayers": 1,
+        "maximumBidForNextPlayer": 1245
+    },
+    {
+        "name": "Matadorz",
+        "teamLogo": "matadors.png",
+        "balancePoints": 1485,
+        "numberOfPlayers": 3,
+        "numberOfWomenPlayers": 2,
+        "maximumBidForNextPlayer": 1245
+    },
+    {
+        "name": "Torpedoes",
+        "teamLogo": "torpedoes.png",
+        "balancePoints": 1500,
+        "numberOfPlayers": 2,
+        "numberOfWomenPlayers": 1,
+        "maximumBidForNextPlayer": 1245
+    },
+    {
+        "name": "Zionz",
+        "teamLogo": "zionz.png",
+        "balancePoints": 1375,
+        "numberOfPlayers": 3,
+        "numberOfWomenPlayers": 1,
+        "maximumBidForNextPlayer": 1135
+    }
+]
+  
+curl --request POST \
+  --url http://localhost:8080/player_assignments \
+  --header 'accept: application/json' \
+  --header 'authorization: Basic QWRtaW5pc3RyYXRvcjptYW5hZ2U=' \
+  --header 'content-type: application/json' \
+  --data '{
+	"playerAlias": "",
+	"teamName": "Zionz",
+	"role": "Captain",
+	"acquiredPoints": 0
+}'
+
+curl --request POST \
+  --url http://localhost:8080/players \
+  --header 'accept: application/json' \
+  --header 'authorization: Basic QWRtaW5pc3RyYXRvcjptYW5hZ2U=' \
+  --header 'content-type: multipart/form-data; boundary=---011000010111000001101001' \
+  --form csvFile=
+
+  

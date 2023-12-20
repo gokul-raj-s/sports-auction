@@ -1,0 +1,9 @@
+POST /player_assignments/spl_auction/_bulk
+{ "index" : {} }
+{ "playerAlias" : "", "teamName" : "Matadorz", "role" : "Captain", "acquiredPoints" : 0 }
+{ "index" : {} }
+{ "playerAlias" : "", "teamName" : "Snipers", "role" : "Captain", "acquiredPoints" : 0 }
+{ "index" : {} }
+{ "playerAlias" : "", "teamName" : "Zionz", "role" : "Captain", "acquiredPoints" : 0 }
+{ "index" : {} }
+{ "playerAlias" : "", "teamName" : "Torpedoes", "role" : "Captain", "acquiredPoints" : 0 }

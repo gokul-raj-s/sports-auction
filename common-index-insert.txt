@@ -1,0 +1,9 @@
+POST /common_index/spl_auction/common_information
+{
+	"expectedTeamSize": 20,
+	"expectedNoOfWomenPlayers": 3,
+	"negativePoints": 10,
+	"bonusPoints": 10,
+	"basePointsPerTeam": 1500,
+	"basePointsPerPlayer": 25
+}

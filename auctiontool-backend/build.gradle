@@ -1,0 +1,21 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.3.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.softwareag.spl.auction'
+version = '1.0.2019-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+dependencies {
+	// OpenCSV
+	compile 'com.opencsv:opencsv:4.5'
+
+	// https://mvnrepository.com/artifact/com.github.vanroy/spring-boot-starter-data-jest
+	compile group: 'com.github.vanroy', name: 'spring-boot-starter-data-jest', version: '3.2.1.RELEASE'
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+}

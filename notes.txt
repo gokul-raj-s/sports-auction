@@ -1,0 +1,42 @@
+Players
+- alias
+- firstname
+- lastname
+- nicknames
+- spldebut
+- profilepicture
+- strengths
+- achievements
+Teams
+- Balance points
+- Number of players
+- Maximum bid for next player
+PlayerAssignments
+- alias
+- team
+- role (Captain, Vice-Captain, Player)
+- points
+Common
+- Expected team size
+- Negative Points
+- Bonus points
+- base points
+
+Base it on a theme
+- Use a carousel in the welcome page
+- Then scroll down to have the auction
+Four cards for four teams with statistics
+Below show table with team member names
+
+POJO, Repository, Manager for all four types
+REST Service for getting team information - GET /teams
+REST Service for obtaining players of team - GET /player_assignments/{team_name}
+REST Service for getting next random player for auction - GET /random_player
+REST Service for submitting player assignment - POST /player_assignments
+REST Service for importing player details from CSV - Important but can be done last - POST /players
+
+Labcase access to SPORT team members
+
+vue-cli-service serve --port 3000
+
+npm run serve
