@@ -7,3 +7,6 @@ POST /teams/spl_auction/_bulk
 { "name" : "Torpedoes", "teamLogo" : "torpedoes.png" }
 { "index" : { "id" : "Zionz" } }
 { "name" : "Zionz", "teamLogo" : "zionz.png" }
+
+
+asdf
